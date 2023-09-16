@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animsition.min.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/animsition.min.js"></script>
+    <script>
+        $(function(){
+             // animation
+        $(".animsition").animsition({
+               inClass: 'fade-in-up-sm',
+               outClass: 'fade-out-up-sm',
+               inDuration: 1500,
+               outDuration: 800,
+               linkElement: '.animsition-link',
+               
+           });
+        })
+       
+   </script>
+    
+    <title>포트폴리오 웰빙알로에</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        :root{
+            scroll-behavior:smooth;
+            font-family:'Noto Sans KR', sans-serif;
+            font-weight:400;
+            font-size:16px;
+            color:#1e1e1c;
+            line-height:1.2;
+        }
+        .container{
+            max-width:1280px;
+            margin:0 auto;
+            padding:0px 22px;
+        }
+        #wrap{
+            overflow:hidden;
+        }
+
+        /* header */
+        #header{
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            z-index:2;
+            background:#fff;           
+        }
+        #header .container{
+            position:relative;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            height:75px;
+        }
+        h1{
+            font-weight:500;
+        }       
+
+
+        
+        .disign-sec h2{
+            display:none;
+        }
+
+
+
+        /* footer */
+        .sns02{
+            display:flex;
+            justify-content:center;
+        }
+        .sns02 a{
+            display:block;
+            width:20px;
+            height:20px;
+            margin:25px 25px;
+        }
+        #footer{
+            height:65px;
+            background:#1e1e1c;
+        }
+
+
+        .disign-sec{
+            padding-top:100px;
+        }
+
+
+        @media (min-width:768px){
+            /* footer */
+            #footer{
+                display:none;
+            }
+        }
+
+
+        @media (min-width:1280px){
+            nav>ul>li{
+                margin-right:30px;
+            }
+            .sns01 a{
+                width:25px;
+                margin-bottom:5px;
+            }
+            .sns01 a:first-child{
+                margin-right:30px;
+            }
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <section id="wrap"  class="animsition" class="animsition-link">
+        <header id="header">
+            <div class="container">
+                <h1>
+                    <a href="./index.html">메인으로 돌아가기</a>
+                </h1>
+            </div>
+        </header>
+        <section class="disign-sec">
+            <h2>웰빙알로에 디자인</h2>
+            <div class="img-box">
+                <img src="./images/web01 웰빙알로에 작업.png" alt="웰빙 시안디자인">
+            </div>
+        </section>
+        <!-- <footer id="footer">
+            <div class="container">
+                <div class="sns02">
+                    <a href="#">
+                        <img src="./images/ico_E-mail-02.png" alt="이메일02">
+                    </a> -->
+                    <!-- <a href="#">
+                        <img src="./images/ico_Git-02.png" alt="깃허브02">
+                    </a> -->
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
